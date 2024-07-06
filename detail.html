@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Meal App</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/detail.css" />
+    </head>
+    <body>
+        <div id="meal_img" class="meal_img">
+            <img id="meal_img_src" src="" alt="" />
+            <div class="img_cover"></div>
+        </div>
+        <div class="meal_heading">
+            <div class="header">
+                <h2 id="header"></h2>
+            </div>
+            <div class="fav_container">
+                <button id="add_to_fav" class="add_to_fav"></button>
+            </div>
+        </div>
+
+        <div class="meal_details">
+            <table>
+                <tr class="meal_tags">
+                    <td>Type</td>
+                    <td>:</td>
+                    <td id="meal_tags"></td>
+                </tr>
+                <tr class="meal_category">
+                    <td>Category</td>
+                    <td>:</td>
+                    <td id="meal_category"></td>
+                </tr>
+                <tr class="meal_area">
+                    <td>Region</td>
+                    <td>:</td>
+                    <td id="meal_area"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="recipe" class="recipe">
+            <div class="ingredients">
+                <h3>Ingredients:</h3>
+                <table id="ingredients">
+                    <!-- TO be commented -->
+                    <!-- <tr class="ingredient">
+                        <td class="ingredient_name">Ingredientssssssss</span>
+                        <td class="ingredient_amt">150 large</span>
+                    </tr> -->
+                </table>
+            </div>
+            <div class="instructions">
+                <h3>Ingredients:</h3>
+                <p id="instructions">
+                    <!-- Wash and soak toor dal in approx. 3 cups of water, for at least one hours. Dal
+                    will be double in volume after soaking. Drain the water. -->
+                </p>
+            </div>
+        </div>
+    </body>
+    <script type="module" src="assets/script/detail.js"></script>
+</html>

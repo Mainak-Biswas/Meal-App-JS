@@ -1,0 +1,132 @@
+/* Recipe section divided into 2 sections */
+/* 1. Ingredient 2. Instructions */
+
+.recipe {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    align-items: baseline;
+}
+
+.recipe h3 {
+    color: cadetblue;
+}
+
+.ingredients {
+    width: 25%;
+    box-sizing: border-box;
+    width: max-content;
+    padding: 0px 20px;
+    flex-grow: 1;
+    text-transform: capitalize;
+}
+.ingredients table {
+    margin: auto;
+}
+
+.ingredients td {
+    padding: 3px 10px;
+}
+
+.instructions {
+    width: 60%;
+    box-sizing: border-box;
+    flex-grow: 1;
+    text-align: justify;
+    padding: 0px 20px;
+}
+/*  */
+body {
+    padding: 0px;
+}
+
+/* Meal image*/
+.meal_img {
+    max-width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.meal_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.meal_img .img_cover {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: 0;
+    background-image: linear-gradient(transparent, black);
+}
+
+/* Heading and Favorite button */
+.meal_heading {
+    position: relative;
+    margin-top: -150px;
+    color: white;
+    text-shadow: 0px 0px 5px #555;
+    z-index: 1;
+}
+.fav_container {
+    display: flex;
+    justify-content: center;
+}
+.add_to_fav {
+    margin: 10px;
+    color: white;
+    border: 2px solid white;
+}
+.add_to_fav i {
+    color: white;
+}
+.add_to_fav .fa-heart {
+    color: red;
+}
+
+/* Meal details*/
+
+.meal_details {
+    font-size: 18px;
+    font-size: 18px;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.meal_details > div {
+    width: 30%;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .meal_details > div {
+        width: 100%;
+    }
+}
+
+/*Meal detail table*/
+
+.meal_details td:nth-child(1) {
+    width: 100px;
+    color: black;
+}
+.meal_details td:nth-child(even) {
+    width: 20px;
+}
+
+/* Loading */
+.ld {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00c9ff;
+
+    justify-content: center;
+    align-items: center;
+}

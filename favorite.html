@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Meal App</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <div class="header">
+            <h1>My Meals</h1>
+            <div id="search_bar_fav" class="search_bar search_bar_fav">
+                <input
+                    type="search"
+                    name="search"
+                    id="search_fav"
+                    class="search"
+                    placeholder="Search your favourite meal."
+                />
+                <button id="search_btn" class="search_btn">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <div id="nav" class="nav">
+            <a href="index.html" id="home_link">Home</a>
+            <a href="#" id="fav_link" class="current fav">
+                My Favorites
+                <i class="fa fa-heart" style="color: red;"></i>
+            </a>
+        </div>
+        <div id="fav_meals" class="fav_meals meals">
+            <!-- All favorite meals are displayed here -->
+        </div>
+    </body>
+    <script type="module" src="assets/script/favorite.js"></script>
+</html>
